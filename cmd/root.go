@@ -13,7 +13,7 @@ var rootCmd = &cobra.Command{
                 love by spf13 and friends in Go.
                 Complete documentation is available at http://hugo.spf13.com`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("Hello CLI")
+		fmt.Println("Root Cmd executed")
 	},
 }
 
@@ -24,11 +24,8 @@ func Execute() {
 	}
 }
 
-func initConfig() {
-	fmt.Println("inside initConfig")
-}
+func initConfig() {}
 
 func init() {
-	fmt.Println("inside init")
 	cobra.OnInitialize(initConfig)
 }

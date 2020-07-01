@@ -39,6 +39,7 @@ func addFloat(args []string) {
 
 var addCmd = &cobra.Command{
 	Use:   "add",
+	Short: "Add Number",
 	Long: "Add Integer Or Float Numbers",
 	Run: func(cmd *cobra.Command, args []string) {
 		// get the flag value, its default value is false

@@ -9,6 +9,7 @@ import (
 
 var oddCmd = &cobra.Command{
 	Use:   "odd",
+	Short: "Add Only Odd Number",
 	Long: `Add Odd Integer Numbers`,
 	Run: func(cmd *cobra.Command, args []string) {
 		var oddSum int

@@ -9,7 +9,7 @@ import (
 
 var evenCmd = &cobra.Command{
 	Use:   "even",
-	Short: "A brief description of your command",
+	Short: "Add Only Event Number",
 	Long:  `Add Event Integer Numbers`,
 	Run: func(cmd *cobra.Command, args []string) {
 		var evenSum int

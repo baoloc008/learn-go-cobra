@@ -23,3 +23,11 @@ func Execute() {
 		os.Exit(1)
 	}
 }
+
+func initConfig() {
+	fmt.Println("inside initConfig")
+}
+
+func init() {
+	cobra.OnInitialize(initConfig)
+}

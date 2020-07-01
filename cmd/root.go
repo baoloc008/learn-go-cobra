@@ -29,5 +29,6 @@ func initConfig() {
 }
 
 func init() {
+	fmt.Println("inside init")
 	cobra.OnInitialize(initConfig)
 }
